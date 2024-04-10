@@ -1,4 +1,6 @@
 import os
+
+# Huggingface 모델 저장 경로 지정
 # os.environ["HF_HOME"] = "/hdd/hjl8708/saved_models"
 # os.environ["TRANSFORMERS_CACHE"] = "/hdd/hjl8708/saved_models"
 
@@ -7,8 +9,8 @@ import fire
 import json
 
 def start(
-    test_data_path=f'../data/input.json', 
-    output_filename=f"../results/output.json",
+    test_data_path=f'data/input.json', 
+    output_filename=f"results/output.json",
     batchsize=2, 
     model_name='mixtral-instruct-8x7b',
     pretrained_model_name_or_path='mistralai/Mixtral-8x7B-Instruct-v0.1',
